@@ -1,0 +1,19 @@
+CREANDO USUARIOS Y GRUPOS 
+
+CRECION DE USUARIOS
+como primer paso tenemos que abrir la terminar y entrar como super usuario, eso lo hacemos con el comando "SU".
+
+Ahora bien, para crear un usuario nuevo usamos el comando “useradd” seguido del nombre del usuario useradd [nombre del usuario] ejemplo useradd UGV.
+
+Si en dado caso nos equivocamos o deseamos modificar usamos el comando “usermode” primero tenemos que escribir la opción seguido por el que le queremos por y por último el nombre del usuario actual, el comando quedaría de la siguiente manera usermod -l [nombre modificado] [nombre actual] ejemplo usermod -l UGB UGV.
+
+Para eliminar un usuario usamos el comando “userdel”, para usar este comando escribimos primero userdel [opción] nombre del usuario ejemplo userdel UGB.
+
+Para asignar una contraseña a un usuario recién creado usamos el comando “passwd”, la forma de usar lo es escribiendo en la terminal en modo super usuario el comando passwd [nombre del usuario] ejemplo passwd UGB y damos enter posterior mente nos pedirá la contraseña y que confirmemos.
+
+CREACION DE GRUPOS
+Para crear un grupo nuevo usamos el comando “groupadd”, para usar este comando abrimos la terminal y el mondo super usuario escribimos groupadd [nombre del nuevo grupo] cabe destacar que no puede haber con el mismo nombre, ejemplo groupadd gruopUGV.
+
+Modificar grupo, para realizar este procedimiento necesitamos usar el comando “groupmod”, para modificar el grupo la sintaxis seria groupmod [opción] [nombre modificado] [nombre actual del grupo] ejemplo groupmod -n gruopUGB gruopUGV.
+
+Eliminar grupo, para poder eliminar un grupo ninguno de los usuarios que está en ese grupo tiene que estar en el grupo asignado como primario dicho esto el comando que se usa es el “gruopdel” la sintaxis seria de siguiente manera gruopdel nombre del grupo, ejemplo gruopdel gruopUGB.
